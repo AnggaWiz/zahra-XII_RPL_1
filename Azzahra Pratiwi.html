@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keseharian Saya</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clock {
+    font-size: 20px;
+    margin-right: 20px; /* Jarak dari kanan */
+    border: 1px solid #333;
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    background-color: #4b0505; /* Warna latar belakang */
+}
+
+h1 {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+main {
+    padding: 20px;
+}
+
+#story {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+skills .progress {
+    height: auto; /* Mengubah tinggi ke auto agar dapat menyesuaikan ukuran konten */
+    display: flex; /* Mengubah tata letak menjadi flex untuk penataan yang lebih baik */
+    align-items: center; /* Menyamakan tinggi item agar posisinya sejajar */
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 4px;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #e2eefd;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #106eea;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Keseharian Saya</h1>
+        <p id="clock"></p>
+    </header>
+    <main>
+        <section id="story">
+            <p>Nama saya Azzahra Pratiwi, saya kelas XI RPL 1. Saya ingin bercerita tentang aktivitas saya sehari-hari, dari saya bengun tidur di pagi hari lalu kembali tidur di malam hari. Saya bangun dari tidur saya pada pukul 04.40 WIB. Lalu pada pukul 04.50 WIB saya mandi, setelah itu saya sholat shubuh, habis sholat shubuh saya sarapan pagi. Setelah selesai sarapan saya bersiap untuk berangkat ke sekolah seperti merapikan buku dan merapikan bekal. Dan setelah itu saya berangkat ke sekolah pada pukul 06.15 WIB menggunakan transportasi umum. Lalu saya sampai di sekolah pada pukul 06.45 WIB.</p>
+            <p>Saya memulai pelajaran pada pukul 07.30 WIB. pada pukul 09.30 WIB, bell istirahat berbunyi lalu saya bersama teman-teman saya pergi ke kantin setelah itu memakan bekal di kelas. Istirahat selesai pada jam 10 lalu saya kembali memulai pelajaran di kelas. Saya belajar di sekolah sampai jam 12 siang, bell pulang berbunyi tepat pada jam 12 siang, lalu saya bersama teman saya pulang ke rumah menggunakan transportasi umum. Saya sampai dirumah pada pukul 12.40 WIB, lalu saya mengganti pakaian seragam saya dengan pakaian keseharian saya. Setelah itu, saya menunaikan sholat Dzuhur. Setelah selesai sholat saya makan siang dan membantu mama saya memasak. Lalu pada pukul 13.40 WIB, saya istirahat dengan tidur siang sampai pukul 15.20 WIB.</p>
+            <p>Setelah bangun tidur, saya mandi dan setelah itu saya menunaikan sholat Ashar. Lalu pada pukul 16.30 WIB, saya mengajak adik perempuan saya bermain di halaman rumah bersama anak-anak tetangga sekitar. Pukul 17.40 WIB, saya masuk ke rumah karena hari sudah mulai memasuki Maghrib. Setelah itu pada pukul 18.10 WIB, saya menunaikan sholat Maghrib sampai memasuki waktu menunaikan sholat Isya. Setelah selesai beribadah, saya belajar pada pukul 19.30 WIB sampai pukul 20.30 WIB. Dan pada Pukul 21.20 WIB saya terlelap tidur. Sekian keseharian saya sebagai pelajar, menyenangkan tapi terkadang sedikit melelahkan, Terimakasih.</p>
+        </section>
+        
+       
+        <section id="skills" class="skills">
+            <h2 class="text-center">Daftar Waktu yang dihabiskan</h2>
+            <div class="container">
+                <div class="row skills-content">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                            <span class="skill">Studi <i class="val">5 jam/hari</i></span>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="24" style="width: 40%;"></div>
+                        </div>
+                      
+                        <div class="progress">
+                            <span class="skill">Bermain <i class="val">2 jam/hari</i></span>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="24" style="width: 30%;"></div>
+                        </div>
+                       
+                        <div class="progress">
+                            <span class="skill">Olahraga<i class="val">1 jam/hari</i></span>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="24" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; XI RPL 1 : Azzahra Pratiwi</p>
+    </footer>
+    <div style="height: 100px;"></div>
+ 
+</body>
+<script>
+        
+    function showTime() {
+        let date = new Date(); 
+        let hours = date.getHours(); 
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds(); 
+        let time = hours + ":" + minutes + ":" + seconds; 
+        document.getElementById("clock").innerText = time; 
+        setTimeout(showTime, 1000); 
+    }
+    showTime();
+</script>
+</html>
